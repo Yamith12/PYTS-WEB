@@ -1,0 +1,832 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffdfd;
+    color: #050505;
+}
+
+.top-bar {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #070606;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.account-cart a {
+    color: #fff;
+    margin-left: 15px;
+}
+
+/* Estilos para la Barra de Búsqueda */
+.search-bar {
+    position: relative;
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.suggestions-list {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions-list li:hover {
+    background-color: #f0f0f0;
+}
+
+
+.main-section img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* inicio */
+
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+.background-image {
+    background-image: url('Img/descarga.jpg'); /* Coloca aquí la URL de tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.welcome-content {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px 0;
+}
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+.cta-button {
+    background-color: #ff6600; /* Color del botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.cta-button:hover {
+    background-color: #cc5200; /* Color del botón al pasar el cursor */
+}
+
+      /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Barra de búsqueda */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #000000;
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 300px;
+}
+
+.search-bar button {
+    padding: 8px;
+    background-color: #ffa500;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Sección de Productos Destacados */
+.featured-products {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 1.8rem;
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    display: inline-block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección de Ofertas Especiales */
+.offers-section {
+    background-color: #fdf6e4;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+.offers-section .section-title {
+    font-size: 1.8rem;
+    color: #ff6600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.product-card .product-price {
+    font-weight: bold;
+    color: #ff5050;
+    margin: 10px 0;
+}
+
+/* Sección de Compra por Lote */
+.batch-buy-section {
+    background-color: #fff0cc;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+.batch-buy-section h2 {
+    font-size: 1.8rem;
+    color: #ff9900;
+    margin-bottom: 10px;
+}
+
+/* Banner Promocional */
+.promotion-banner {
+    background-color: #ffcccb;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+.promotion-banner h2 {
+    font-size: 1.8rem;
+    color: #ff5050;
+    margin-bottom: 5px;
+}
+
+.promotion-banner p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Sección de Categorías Populares */
+.categories-grid {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+.categories-grid h2 {
+    font-size: 1.8rem;
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+
+.category-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    display: inline-block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.category-card i {
+    font-size: 2rem;
+    color: #ff9900;
+    margin-bottom: 10px;
+}
+
+/* Sección de beneficios en cuadros grandes */
+.benefits-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 20px;
+}
+
+.benefit-box {
+    background-color: #ffcc00;
+    color: #333;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    max-height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.benefit-box p {
+    font-size: 0.85rem;
+    font-weight: normal;
+}
+
+/* Ofertas Flash */
+.countdown-timer {
+    background-color: #ff5050;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.timer {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Sección de Últimas Noticias */
+.news-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+.news-section h2 {
+    font-size: 1.5rem;
+    color: #ff9900;
+    margin-bottom: 10px;
+}
+
+.news-section .news-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.news-section .news-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    color: #333;
+    font-size: 1rem;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Sección de Reseñas de Clientes */
+.social-proof {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+.social-proof h2 {
+    font-size: 1.5rem;
+    color: #ff9900;
+    margin-bottom: 10px;
+}
+
+.social-proof .reviews-carousel {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    justify-content: center;
+}
+
+.social-proof .review-card {
+    min-width: 250px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    color: #333;
+    font-size: 0.9rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de Newsletter */
+.newsletter-signup {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #333;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+.newsletter-signup h2 {
+    font-size: 1.5rem;
+    color: #ff9900;
+    margin-bottom: 10px;
+}
+
+.newsletter-signup p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.newsletter-signup form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter-signup input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 250px;
+}
+
+.newsletter-signup button {
+    padding: 8px 15px;
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer .footer-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #ff9900;
+}
+
+.footer .footer-section ul {
+    list-style: none;
+}
+
+.footer .footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+ footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+          }
+
+          
+/* Estilos para el Slider */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+/* Botones del Slider */
+.prev-slide,
+.next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev-slide {
+    left: 10px;
+}
+
+.next-slide {
+    right: 10px;
+}
+
+/* Estilos del Slider */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slider-container .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-container .slide {
+    min-width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Estilo actualizado del Chatbot */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chatbot-toggle {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chatbox {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+#user-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.send-message {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #070606; /* Color de fondo */
+    padding: 10px 20px;
+}
+
+.navbar .logo img {
+    height: 50px; /* Ajusta según el tamaño del logo */
+}
+
+.navbar .menu {
+    list-style: none; /* Eliminar viñetas */
+    display: flex; /* Usar flexbox para alineación */
+    gap: 20px; /* Espaciado entre enlaces */
+}
+
+.navbar .menu a {
+    color: #fff; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    padding: 5px 10px; /* Espaciado interno */
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+.navbar .menu a:hover {
+    background-color: #ff6600; /* Color de fondo al pasar el ratón */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+.account-cart a {
+    color: #fff; /* Color de los enlaces de cuenta y carrito */
+    margin-left: 15px; /* Espacio a la izquierda */
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del Cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffdfd;
+    color: #050505;
+}
+
+/* Barra Superior */
+.top-bar {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+/* Barra de Navegación */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #070606; /* Color de fondo */
+    padding: 10px 20px;
+}
+
+.navbar .logo img {
+    height: 50px; /* Ajusta según el tamaño del logo */
+}
+
+.navbar .menu {
+    list-style: none; /* Eliminar viñetas */
+    display: flex; /* Usar flexbox para alineación */
+    gap: 20px; /* Espaciado entre enlaces */
+}
+
+.navbar .menu a {
+    color: #fff; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    padding: 5px 10px; /* Espaciado interno */
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+.navbar .menu a:hover {
+    background-color: #ff6600; /* Color de fondo al pasar el ratón */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+.account-cart a {
+    color: #fff; /* Color de los enlaces de cuenta y carrito */
+    margin-left: 15px; /* Espacio a la izquierda */
+}
+
+/* Sección de Soporte Técnico */
+.support-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.support-section h2 {
+    margin-bottom: 20px;
+}
+
+.support-section h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.support-section ul {
+    list-style: none; /* Sin viñetas */
+    padding: 0;
+}
+
+.support-section li {
+    margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* Sección del Carrito */
+.cart-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.cart-item {
+    margin: 10px 0;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.cart-total {
+    margin-top: 20px;
+}
+
+#checkout-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#checkout-button:hover {
+    background-color: #cc5200; /* Color al pasar el cursor */
+}

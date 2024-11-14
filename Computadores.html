@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerUp Universe</title>
+    <link rel="stylesheet" href="Computadores.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+ <body>
+    
+</header>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+       <div class="logo">
+           <img src="Img/logo.jpg" alt="Logo PowerUp Universe">
+       </div>
+       <ul class="menu">
+        <li><a href="Inicio.html">INICIO</a></li>
+        <li><a href="Computadores.html">COMPUTADORAS</a></li>
+        <li><a href="Celulares.html">CELULARES</a></li>
+        <li><a href="Tabletas.html">TABLETS</a></li>
+        <li><a href="Consolas.html">CONSOLAS</a></li>
+        <li><a href="Partes.html">PARTES</a></li>
+        <li><a href="Perifericos.html">PERIFERICOS</a></li>
+        <li><a href="Soporte-tecnico.html">SOPORTE TÉCNICO</a></li>
+       </ul>
+       <div class="account-cart">
+           <a href="micuenta.html">Mi cuenta</a>
+           <a href="Fav.html">🧡</a>
+           <a href="Carrito.html">🛒 Total $0</a>
+       </div>
+   </nav>
+</header>
+
+    <!-- Barra de Búsqueda con Autocompletado -->
+    <div class="search-bar">
+     <input type="text" id="search-input" placeholder="Buscar productos..." autocomplete="off">
+     <button onclick="buscarProducto()">🔍</button>
+     <ul id="suggestions" class="suggestions-list"></ul>
+    </div>
+
+
+    <!-- Sección de Computadoras en Venta -->
+    <div class="featured-products">
+        <h2>Computadoras en Venta</h2>
+
+        <div class="products-grid">
+            <!-- Producto 1 -->
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+            <div class="product-card" data-category="laptops" data-price="1200">
+                <img src="Img/laptop1.jpg" alt="Laptop Gaming ASUS"> <!-- Cambia esta ruta -->
+                <h3>Laptop Gaming ASUS</h3>
+                <p>Precio: $1200</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="desktops" data-price="800">
+                <img src="Img/pc1.jpg" alt="PC Gamer HP"> <!-- Cambia esta ruta -->
+                <h3>PC Gamer HP</h3>
+                <p>Precio: $800</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="laptops" data-price="1500">
+                <img src="Img/laptop2.jpg" alt="Laptop Dell Inspiron"> <!-- Cambia esta ruta -->
+                <h3>Laptop Dell Inspiron</h3>
+                <p>Precio: $1500</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="desktops" data-price="600">
+                <img src="Img/pc2.jpg" alt="PC de Escritorio Lenovo"> <!-- Cambia esta ruta -->
+                <h3>PC de Escritorio Lenovo</h3>
+                <p>Precio: $600</p>
+                <button class="cta-button">Agregar al Carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 PowerUp Universe. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
